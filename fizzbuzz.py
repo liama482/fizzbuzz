@@ -1,8 +1,7 @@
 """
 fizzbuzz.py
 Author: Liam
-Credit: 
-
+Credit: none
 Assignment:
 
 Write a program that prints the numbers from 1 to 100. But for 
@@ -43,15 +42,12 @@ f=int(fizz)
 bz=int(buzz)
 
 for n in range (1,b):
-    if n%fizz != 0 and n%buzz != 0:
+    if n%f != 0 and n%bz != 0:
         print(n)
     else:
-        if n%fizz == 0 and n%buzz != 0:
+        if n%f == 0 and n%bz != 0:
             print("Fizz")
-        if n%fizz != 0 and n%buzz == 0:
+        if n%f != 0 and n%bz == 0:
             print("Buzz")
-        #if n%fizz == 0 and n%buzz == 0:
-            #print("FizzBuzz")
-
-#if temperature < 55 and weather == "raining":
- #   print("You should bring a warm raincoat.")
+        if n%f == 0 and n%bz == 0:
+            print("FizzBuzz")
