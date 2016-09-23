@@ -41,7 +41,7 @@ b=int(b)
 f=int(fizz)
 bz=int(buzz)
 
-for n in range (1,b):
+for n in range (1,b+1):
     if n%f != 0 and n%bz != 0:
         print(n)
     else:
