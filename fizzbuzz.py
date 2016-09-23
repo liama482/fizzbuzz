@@ -33,18 +33,25 @@ Fizz
 13
 14
 FizzBuzz
-16
-17
-Fizz
-19
-Buzz
-Fizz
-22
-23
-Fizz
-Buzz
 """
 
 b = input("How many numbers shall we print? ")
 fizz = input ("For multiples of what number shall we print 'Fizz'? ")
 buzz = input("For multiples of what number shall we print 'Buzz'? ")
+b=int(b)
+f=int(fizz)
+bz=int(buzz)
+
+for n in range (1,b):
+    if n%fizz != 0 and n%buzz != 0:
+        print(n)
+    else:
+        if n%fizz == 0 and n%buzz != 0:
+            print("Fizz")
+        if n%fizz != 0 and n%buzz == 0:
+            print("Buzz")
+        #if n%fizz == 0 and n%buzz == 0:
+            #print("FizzBuzz")
+
+#if temperature < 55 and weather == "raining":
+ #   print("You should bring a warm raincoat.")
